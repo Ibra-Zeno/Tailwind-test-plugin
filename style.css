@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 /* npx tailwindcss -i style.css -o ./dist/output.css --watch */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@layer utilities {
+  .index-main-card {
+    @apply flex rounded-lg h-full border border-gr-400 bg-gray-100 p-8 flex-col;
+  }
+  .seen-on-wrap {
+    @apply bg-gr-100 min-h-[100px] relative w-full backdrop-blur-sm bg-opacity-10 py-s-three px-s-five flex flex-row justify-around items-center;
+  }
+  .seen-on {
+    @apply flex-wrap h-full w-full max-w-7xl relative gap-y-s-four flex flex-row justify-around items-center;
+  }
+  .seen-on h2 {
+    @apply text-f-three font-medium;
+  }
+  .logos {
+    @apply flex flex-row max-w-[70%] gap-x-s-three gap-y-s-three w-full flex-wrap justify-around items-center;
+  }
+}
+
+#hero-index {
+  background-image: url("../images/header-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
